@@ -43,6 +43,11 @@ export const Footer = () => {
                   Gallery
                 </Link>
               </li>
+              <li>
+                <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-accent transition-colors duration-300">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
