@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface HeroProps {
   title: string;
@@ -52,20 +53,24 @@ export const Hero = ({
         )}
         {showCTA && (
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 group"
-            >
-              Explore Programs
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-white/10 text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 backdrop-blur-sm"
-            >
-              Schedule a Visit
-            </Button>
+            <Link to="/about">
+              <Button
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6 group"
+              >
+                Explore Programs
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white/10 text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 backdrop-blur-sm"
+              >
+                Schedule a Visit
+              </Button>
+            </Link>
           </div>
         )}
       </div>
