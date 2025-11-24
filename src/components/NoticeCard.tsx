@@ -8,6 +8,7 @@ interface NoticeCardProps {
   content: string;
   isPinned?: boolean;
   category?: string;
+  onClick?: () => void;
 }
 
 export const NoticeCard = ({
@@ -16,9 +17,13 @@ export const NoticeCard = ({
   content,
   isPinned = false,
   category = "General",
+  onClick,
 }: NoticeCardProps) => {
   return (
-    <Card className="card-hover border-l-4 border-l-accent">
+    <Card 
+      className="card-hover border-l-4 border-l-accent cursor-pointer"
+      onClick={onClick}
+    >
       <CardHeader>
         <div className="flex items-start justify-between gap-2">
           <CardTitle className="text-xl font-display flex items-center gap-2">
@@ -36,9 +41,9 @@ export const NoticeCard = ({
           {date}
         </div>
         <p className="text-foreground/80 line-clamp-3">{content}</p>
-        <button className="text-primary hover:text-primary-light font-medium text-sm transition-colors duration-300">
+        <span className="text-primary hover:text-primary-light font-medium text-sm transition-colors duration-300">
           Read more →
-        </button>
+        </span>
       </CardContent>
     </Card>
   );
