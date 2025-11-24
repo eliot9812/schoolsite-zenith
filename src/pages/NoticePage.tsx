@@ -1,10 +1,14 @@
 import { Hero } from "@/components/Hero";
 import { NoticeCard } from "@/components/NoticeCard";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Calendar } from "lucide-react";
 
 const NoticePage = () => {
   const [visibleNotices, setVisibleNotices] = useState(6);
+  const [selectedNotice, setSelectedNotice] = useState<any>(null);
 
   const allNotices = [
     {
@@ -90,7 +94,7 @@ const NoticePage = () => {
             <div className="space-y-6 animate-fade-in">
               {allNotices.slice(0, visibleNotices).map((notice, index) => (
                 <div key={index} style={{ animationDelay: `${index * 50}ms` }}>
-                  <NoticeCard {...notice} />
+                  <NoticeCard {...notice} onClick={() => setSelectedNotice(notice)} />
                 </div>
               ))}
             </div>
@@ -116,6 +120,33 @@ const NoticePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Notice Detail Dialog */}
+      <Dialog open={!!selectedNotice} onOpenChange={() => setSelectedNotice(null)}>
+        <DialogContent className="max-w-2xl">
+          {selectedNotice && (
+            <>
+              <DialogHeader>
+                <div className="flex items-center justify-between gap-4">
+                  <DialogTitle className="text-2xl font-display">
+                    {selectedNotice.title}
+                  </DialogTitle>
+                  <Badge variant="secondary">{selectedNotice.category}</Badge>
+                </div>
+                <div className="flex items-center text-sm text-muted-foreground mt-2">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  {selectedNotice.date}
+                </div>
+              </DialogHeader>
+              <div className="mt-4">
+                <p className="text-foreground/90 leading-relaxed">
+                  {selectedNotice.content}
+                </p>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
