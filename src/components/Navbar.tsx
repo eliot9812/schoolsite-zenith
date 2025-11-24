@@ -24,10 +24,11 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center group-hover:bg-primary-light transition-colors duration-300">
-              <GraduationCap className="w-6 h-6 text-primary-foreground" />
+              {/* <GraduationCap className="w-6 h-6 text-primary-foreground" /> */}
+              <img src="public/images/logo.png" alt="schoollogo" />
             </div>
             <span className="text-xl font-display font-bold text-primary">
-              Excellence Academy
+             Motherland Academy
             </span>
           </Link>
 

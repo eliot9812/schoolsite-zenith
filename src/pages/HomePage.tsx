@@ -62,7 +62,7 @@ const HomePage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Welcome to Excellence Academy"
+        title="Welcome to Motherland academy"
         subtitle="Empowering minds, building futures. Join us in our journey of academic excellence and holistic development."
         showCTA
       />
@@ -72,10 +72,11 @@ const HomePage = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-primary">
-              About Excellence Academy
+              About Motherland academy
+    
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              For over three decades, Excellence Academy has been at the forefront of quality
+              For over three decadeso Motherland academy has been at the forefront of quality
               education, nurturing young minds to become confident, creative, and responsible
               global citizens. Our dedicated faculty and state-of-the-art facilities create an
               environment where students thrive academically, socially, and emotionally.
