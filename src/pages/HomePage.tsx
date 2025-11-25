@@ -1,7 +1,5 @@
 import { Hero } from "@/components/Hero";
 import { NoticeCard } from "@/components/NoticeCard";
-import { QuickLinkCard } from "@/components/QuickLinkCard";
-import { Book, Users, Camera, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -31,32 +29,6 @@ const HomePage = () => {
     },
   ];
 
-  const quickLinks = [
-    {
-      title: "Admissions",
-      description: "Learn about our admission process and requirements",
-      icon: Book,
-      href: "/contact",
-    },
-    {
-      title: "About Us",
-      description: "Discover our mission, vision, and values",
-      icon: Users,
-      href: "/about",
-    },
-    {
-      title: "Gallery",
-      description: "Browse through our school events and activities",
-      icon: Camera,
-      href: "/gallery",
-    },
-    {
-      title: "Contact",
-      description: "Get in touch with us for any queries",
-      icon: Phone,
-      href: "/contact",
-    },
-  ];
 
   return (
     <div className="min-h-screen">
@@ -95,26 +67,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Quick Links Section */}
-      <section className="section-padding bg-muted">
-        <div className="container-custom">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Quick Links
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Find what you're looking for quickly
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in">
-            {quickLinks.map((link, index) => (
-              <div key={index} style={{ animationDelay: `${index * 100}ms` }}>
-                <QuickLinkCard {...link} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Recent Notices Section */}
       <section className="section-padding bg-background">
