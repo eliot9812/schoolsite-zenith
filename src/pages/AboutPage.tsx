@@ -29,7 +29,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Hero title="About Excellence Academy" height="medium" />
+      <Hero title="About Motherland Academy" height="medium" />
 
       {/* About School Section */}
       <section className="section-padding bg-background">

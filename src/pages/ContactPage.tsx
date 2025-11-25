@@ -10,22 +10,22 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Education Lane, Learning City, 12345",
+      content: "Biratnagar-04,Belgachhi,Morang,Nepal",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
+      content: "+977-9842041511",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@excellenceacademy.edu",
+      content: "info@motherlandeacademy.edu",
     },
     {
       icon: Clock,
       title: "Office Hours",
-      content: "Mon-Fri: 8:00 AM - 4:00 PM",
+      content: "Sun-Fri: 8:00 AM - 4:00 PM",
     },
   ];
 
@@ -72,26 +72,26 @@ const ContactPage = () => {
                     <label htmlFor="firstName" className="block text-sm font-medium mb-2">
                       First Name *
                     </label>
-                    <Input id="firstName" placeholder="John" required />
+                    <Input id="firstName" placeholder="Eg:Hari" required />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium mb-2">
                       Last Name *
                     </label>
-                    <Input id="lastName" placeholder="Doe" required />
+                    <Input id="lastName" placeholder="Eg:Bahadur Rai" required />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email Address *
                   </label>
-                  <Input id="email" type="email" placeholder="john.doe@example.com" required />
+                  <Input id="email" type="email" placeholder="example@gmail..com" required />
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium mb-2">
                     Phone Number
                   </label>
-                  <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" />
+                  <Input id="phone" type="tel" placeholder="98XXXXXXXX" />
                 </div>
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium mb-2">
@@ -119,9 +119,9 @@ const ContactPage = () => {
             {/* Map & Additional Info */}
             <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
               <div className="mb-8">
-                <h2 className="text-3xl font-display font-bold text-primary mb-4">Visit Our Campus</h2>
+                <h2 className="text-3xl font-display font-bold text-primary mb-4">Visit Our School</h2>
                 <p className="text-muted-foreground">
-                  We welcome you to visit our campus and experience our facilities firsthand.
+                  We welcome you to visit our SChool and experience our facilities firsthand.
                   Schedule a campus tour by calling our admissions office.
                 </p>
               </div>
@@ -131,13 +131,22 @@ const ContactPage = () => {
                 <div className="aspect-video bg-muted flex items-center justify-center">
                   <div className="text-center space-y-2">
                     <MapPin className="w-12 h-12 text-muted-foreground mx-auto" />
-                    <p className="text-muted-foreground">Google Maps Location</p>
-                    <p className="text-sm text-muted-foreground/70">Interactive map will be displayed here</p>
+                    {/* <p className="text-muted-foreground">Google Maps Location</p> */}
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.4171830896631!2d87.26758954476605!3d26.477077189157715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef747b38ba9c91%3A0x75878c656d79efc1!2sMotherland%20Academy%20Secondary%20School!5e0!3m2!1sen!2snp!4v1763968984143!5m2!1sen!2snp"
+                      width="600"
+                      height="450"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    {/* <p className="text-sm text-muted-foreground/70">Interactive map will be displayed here</p> */}
                   </div>
                 </div>
               </Card>
 
-              {/* Additional Info Card */}
+              {/* Additional Info Card
               <Card className="border-l-4 border-l-accent">
                 <CardContent className="p-6 space-y-4">
                   <h3 className="text-xl font-display font-semibold text-primary">
@@ -158,7 +167,7 @@ const ContactPage = () => {
                     Download Admission Brochure
                   </Button>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
