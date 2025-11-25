@@ -146,23 +146,23 @@ const AboutPage = () => {
       </section>
 
       {/* Principal's Message Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
+      <section className="section-padding bg-accent/10 border-y border-accent/20">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto animate-fade-in">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden bg-accent/20 flex items-center justify-center">
+                <div className="aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center shadow-lg">
                   <Users className="w-32 h-32 text-accent" />
                 </div>
               </div>
               <div className="lg:col-span-2 space-y-6">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2 text-accent">
                     Principal's Message
                   </h2>
-                  <p className="text-primary-foreground/80">Dr. Sarah Johnson</p>
+                  <p className="text-muted-foreground font-medium">Dr. Sarah Johnson</p>
                 </div>
-                <div className="space-y-4 text-primary-foreground/90 leading-relaxed">
+                <div className="space-y-4 text-foreground/80 leading-relaxed">
                   <p>
                     "Welcome to Excellence Academy! It is my privilege to serve as the principal of
                     this wonderful institution where we are committed to nurturing the potential of
