@@ -45,8 +45,8 @@ const ContactPage = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6 space-y-4">
-                  <div className="w-14 h-14 mx-auto bg-accent/10 rounded-full flex items-center justify-center">
-                    <info.icon className="w-7 h-7 text-accent" />
+                  <div className="w-14 h-14 mx-auto bg-muted rounded-full flex items-center justify-center">
+                    <info.icon className="w-7 h-7 text-foreground" />
                   </div>
                   <div>
                     <h3 className="font-display font-semibold text-primary mb-1">{info.title}</h3>
@@ -110,7 +110,7 @@ const ContactPage = () => {
                     required
                   />
                 </div>
-                <Button type="submit" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary-light">
+                <Button type="submit" className="w-full sm:w-auto">
                   Send Message
                 </Button>
               </form>

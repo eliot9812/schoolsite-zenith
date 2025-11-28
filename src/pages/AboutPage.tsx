@@ -73,10 +73,10 @@ const AboutPage = () => {
       <section className="section-padding bg-muted">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 animate-fade-in">
-            <Card className="border-l-4 border-l-primary">
+            <Card className="border-l-4 border-l-foreground">
               <CardContent className="p-8 space-y-4">
                 <h3 className="text-2xl font-display font-bold text-primary flex items-center gap-3">
-                  <Target className="w-8 h-8" />
+                  <Target className="w-8 h-8 text-foreground" />
                   Our Mission
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
@@ -91,10 +91,10 @@ const AboutPage = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-accent">
+            <Card className="border-l-4 border-l-foreground">
               <CardContent className="p-8 space-y-4">
                 <h3 className="text-2xl font-display font-bold text-primary flex items-center gap-3">
-                  <Eye className="w-8 h-8" />
+                  <Eye className="w-8 h-8 text-foreground" />
                   Our Vision
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
@@ -131,8 +131,8 @@ const AboutPage = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-6 space-y-4">
-                  <div className="w-16 h-16 mx-auto bg-accent/10 rounded-full flex items-center justify-center">
-                    <value.icon className="w-8 h-8 text-accent" />
+                  <div className="w-16 h-16 mx-auto bg-muted rounded-full flex items-center justify-center">
+                    <value.icon className="w-8 h-8 text-foreground" />
                   </div>
                   <h3 className="text-xl font-display font-semibold text-primary">
                     {value.title}
@@ -146,18 +146,18 @@ const AboutPage = () => {
       </section>
 
       {/* Principal's Message Section */}
-      <section className="section-padding bg-accent/10 border-y border-accent/20">
+      <section className="section-padding bg-muted border-y border-border">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto animate-fade-in">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-accent/30 to-primary/20 flex items-center justify-center shadow-lg">
-                  <Users className="w-32 h-32 text-accent" />
+                <div className="aspect-square rounded-lg overflow-hidden bg-muted flex items-center justify-center shadow-lg">
+                  <Users className="w-32 h-32 text-foreground" />
                 </div>
               </div>
               <div className="lg:col-span-2 space-y-6">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2 text-accent">
+                  <h2 className="text-3xl md:text-4xl font-display font-bold mb-2 text-primary">
                     Principal's Message
                   </h2>
                   <p className="text-muted-foreground font-medium">Dr. Sarah Johnson</p>
@@ -178,7 +178,7 @@ const AboutPage = () => {
                     "I invite you to explore our school and discover the Excellence Academy
                     difference. Together, let us build a brighter future for our children."
                   </p>
-                  <p className="font-display font-semibold text-accent">
+                  <p className="font-display font-semibold text-primary">
                     With warm regards,
                     <br />
                     Dr. Sarah Johnson

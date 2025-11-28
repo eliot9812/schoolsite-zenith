@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    /* Core Colors - Vibrant Crimson & Gold */
+    /* Core Colors - Clean Monochrome */
     --background: 0 0% 100%; /* #FFFFFF */
     --foreground: 0 0% 10%;
 
@@ -18,36 +18,36 @@
     --popover: 0 0% 100%; /* #FFFFFF */
     --popover-foreground: 0 0% 10%;
 
-    /* Primary - Vibrant Crimson */
-    --primary: 345 90% 52%;
+    /* Primary - Medium Gray */
+    --primary: 0 0% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 345 85% 65%;
+    --primary-light: 0 0% 40%;
 
-    /* Accent - Brilliant Gold */
-    --accent: 42 100% 55%;
+    /* Accent - Dark Gray */
+    --accent: 0 0% 96%; /* #F5F5F5 */
     --accent-foreground: 0 0% 10%;
-    --accent-light: 42 100% 70%;
+    --accent-light: 0 0% 98%;
 
-    /* Secondary - Rich Purple */
-    --secondary: 280 65% 55%;
+    /* Secondary - Medium Gray */
+    --secondary: 0 0% 35%;
     --secondary-foreground: 0 0% 100%;
 
     /* Muted - Light Gray */
     --muted: 0 0% 96%; /* #F5F5F5 */
     --muted-foreground: 0 0% 40%;
 
-    --destructive: 0 85% 60%;
+    --destructive: 0 0% 30%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 90%;
     --input: 0 0% 96%; /* #F5F5F5 */
-    --ring: 345 90% 52%;
+    --ring: 0 0% 25%;
 
     --radius: 0.75rem;
 
-    /* Vibrant Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(345, 90%, 52%) 0%, hsl(280, 65%, 55%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(42, 100%, 55%) 0%, hsl(345, 85%, 65%) 100%);
+    /* Clean Grayscale Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 30%) 0%, hsl(0, 0%, 20%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(0, 0%, 96%) 0%, hsl(0, 0%, 100%) 100%);
     --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
 
     /* Shadows */
@@ -70,13 +70,13 @@
     --popover: 0 0% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 345 85% 65%;
+    --primary: 0 0% 75%;
     --primary-foreground: 0 0% 8%;
 
-    --accent: 42 100% 60%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 95%;
 
-    --secondary: 280 65% 60%;
+    --secondary: 0 0% 65%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 12%;
@@ -84,7 +84,7 @@
 
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 345 85% 65%;
+    --ring: 0 0% 75%;
   }
 }
 
