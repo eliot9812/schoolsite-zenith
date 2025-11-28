@@ -80,7 +80,7 @@ export const GalleryGrid = ({ images }: GalleryGridProps) => {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white border-white/30"
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/10 hover:bg-background/20 text-white border-background/30"
                 onClick={handlePrevImage}
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -88,7 +88,7 @@ export const GalleryGrid = ({ images }: GalleryGridProps) => {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white border-white/30"
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/10 hover:bg-background/20 text-white border-background/30"
                 onClick={handleNextImage}
               >
                 <ChevronRight className="w-6 h-6" />
