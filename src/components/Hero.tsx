@@ -66,7 +66,7 @@ export const Hero = ({
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white/10 text-white border-white/30 hover:bg-white/20 text-lg px-8 py-6 backdrop-blur-sm"
+                className="bg-background/10 text-white border-background/30 hover:bg-background/20 text-lg px-8 py-6 backdrop-blur-sm"
               >
                 Schedule a Visit
               </Button>
