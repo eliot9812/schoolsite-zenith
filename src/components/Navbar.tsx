@@ -46,8 +46,8 @@ export const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-accent text-accent-foreground hover:bg-accent/90">
-              Apply Now
+            <Button asChild className="ml-4 bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link to="/contact">Apply Now</Link>
             </Button>
           </div>
 
@@ -79,8 +79,8 @@ export const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90">
-              Apply Now
+            <Button asChild className="w-full mt-4 bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => setIsOpen(false)}>
+              <Link to="/contact">Apply Now</Link>
             </Button>
           </div>
         </div>
