@@ -21,13 +21,13 @@ export const NoticeCard = ({
 }: NoticeCardProps) => {
   return (
     <Card 
-      className="card-hover border-l-4 border-l-accent cursor-pointer"
+      className="card-hover border-l-4 border-l-foreground cursor-pointer"
       onClick={onClick}
     >
       <CardHeader>
         <div className="flex items-start justify-between gap-2">
           <CardTitle className="text-xl font-display flex items-center gap-2">
-            {isPinned && <Pin className="w-5 h-5 text-accent fill-accent" />}
+            {isPinned && <Pin className="w-5 h-5 text-foreground fill-foreground" />}
             {title}
           </CardTitle>
           <Badge variant="secondary" className="shrink-0">
@@ -41,7 +41,7 @@ export const NoticeCard = ({
           {date}
         </div>
         <p className="text-foreground/80 line-clamp-3">{content}</p>
-        <span className="text-primary hover:text-primary-light font-medium text-sm transition-colors duration-300">
+        <span className="text-primary hover:text-foreground font-medium text-sm transition-colors duration-300">
           Read more →
         </span>
       </CardContent>

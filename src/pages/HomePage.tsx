@@ -59,7 +59,7 @@ const HomePage = () => {
               and competitions while developing the skills and values needed for lifelong success.
             </p>
             <Link to="/about">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary-light mt-4">
+              <Button className="mt-4">
                 Learn More About Us
               </Button>
             </Link>
